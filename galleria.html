@@ -17,10 +17,9 @@
     <script>
       $(function(){
         for (var i=1; i<36; i++) {
-          var newImgTag = $('<img/>', {
-            src: "images-sm/DevStormHackathon" + ((i<10)?"0":"") + i + ".jpg"
-          });
-          $(".galleria").append(newImgTag);
+          $('<img/>', {
+            src: "images-sm/DevStormHackathon" + ((i<10)?"0":"") + i + ".JPG"
+          }).appendTo(".galleria");
         }
         Galleria.loadTheme('themes/classic/galleria.classic.min.js');
         Galleria.run(".galleria");
